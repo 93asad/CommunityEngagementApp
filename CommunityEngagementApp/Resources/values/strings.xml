@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">CommunityEngagementApp</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="menu_posts">Posts</string>
+
+    <!-- Posts screen -->
+    <string name="post_cell_comment_title">Comments</string>
+    <string name="post_cell_like_desc">likeButton</string>
+
+    <!-- Comments screen -->
+    <string name="comment_cell_add_desc">likeButton</string>
+    <string name="add_comment_title">Add comment</string>
+    
+
+</resources>

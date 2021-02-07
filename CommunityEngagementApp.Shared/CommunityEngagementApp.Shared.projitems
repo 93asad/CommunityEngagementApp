@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{EBBFC363-D4E9-4D37-A477-CD01E84748CB}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>CommunityEngagementApp.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Model\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Data\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Data\Source\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Data\Source\Interfaces\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Data\Manager\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Data\Manager\Interfaces\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Services\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Services\Interfaces\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Helper\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Data\CommentDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\PostDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\UserDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Post.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Source\Interfaces\ILocalDataSource.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Source\Interfaces\IRemoteDataSource.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Source\RemoteServer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Manager\Interfaces\IDataManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Manager\DataManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Interfaces\IAccountService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\MockAccountService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\AccountService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Source\MockRemoteServer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\User.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helper\MockHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Comment.cs" />
+  </ItemGroup>
+</Project>

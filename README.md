@@ -2,9 +2,10 @@
 Please read the CommunityEngagementApp.pdf to understand the App structure.
 
 Build Instructions:
-- Please use visual studio to build the app
-- Please set the build configuration to "Mock" before building
--Minimum supported Android version is Lollipop
+- Use visual studio to build the app
+- Checkout latest commit from the 'master branch'
+- Set the build configuration to "Mock" before building
+- Minimum supported Android version is Lollipop
 
 
 TODOs:

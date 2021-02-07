@@ -36,5 +36,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\User.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helper\MockHelper.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Comment.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\CouncilDTO.cs" />
   </ItemGroup>
 </Project>

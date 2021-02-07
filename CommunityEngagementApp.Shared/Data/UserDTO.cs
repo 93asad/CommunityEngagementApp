@@ -22,6 +22,15 @@ namespace CommunityEngagementApp.Shared.Data
         /// </summary>
         public ISet<Guid> Likes { get; set; }
 
-        
+        public User ToUser()
+            => new User
+            {
+                Guid = Guid,
+                Name = Name,
+                CouncilGuid = CouncilGuid,
+                IsConcilStaffMember = IsConcilStaffMember,
+                SubscribedTo = SubscribedTo,
+                Likes = Likes
+            };
     }
 }

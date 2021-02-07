@@ -11,6 +11,22 @@ namespace CommunityEngagementApp.Shared.Data
         public Guid PostGuid { get; set; }
         public string Text { get; set; }
 
-        
+        internal static CommentDTO From(Comment comment, Guid postGuid)
+        {
+            return new CommentDTO
+            {
+                CommenterId = comment.CommenterId,
+                PostGuid = postGuid,
+                Guid = Guid.NewGuid(),
+                Id = GenerateRandomNumber(),
+                Text = comment.Text
+            };
+        }
+
+        static int GenerateRandomNumber()
+        {
+            //TODO: add logic
+            return 1;
+        }
     }
 }

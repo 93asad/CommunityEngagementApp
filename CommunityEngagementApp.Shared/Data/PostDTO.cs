@@ -5,7 +5,7 @@ namespace CommunityEngagementApp.Shared.Data
     {
         public int Id { get; set; }
         public Guid Guid { get; set; }
-        public Guid PosterId { get; set; }
+        public Guid PosterGuid { get; set; }
         public string Text { get; set; }
     }
 }
